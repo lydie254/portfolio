@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Développeuse Frontend</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link
+      rel="icon"
+      href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome/svgs/solid/laptop-code.svg"
+      type="image/svg+xml"
+    />
+  </head>
+  <body>
+    <nav id="navbar">
+      <div class="nav-container">
+        <div class="logo"><i class="fas fa-laptop-code"></i> Lydie-dev</div>
+        <div class="menu-toggle" id="menuToggle">
+          <span></span><span></span><span></span>
+        </div>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#accueil">Accueil</a></li>
+          <li><a href="#competences">Compétences</a></li>
+          <li><a href="#projets">Projets</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Hero -->
+    <div class="hero" id="accueil">
+      <div class="hero-container">
+        <div class="hero-content">
+          <p class="hero-subtitle">DEVELOPPEUSE WEB</p>
+          <h1>Salut, je suis<br /><span class="name">Lydie</span></h1>
+          <p class="hero-description">
+            Je crée des sites vitrines et des interfaces web modernes, avec une
+            expérience utilisateur immersive et un design unique.
+          </p>
+          <div class="cta-buttons">
+            <a href="#contact" class="btn btn-primary">Me contacter</a>
+            <a href="#projets" class="btn btn-secondary">Voir mes projets</a>
+          </div>
+        </div>
+        <div class="hero-photo">
+          <div class="photo-wrapper">
+            <img src="images/photo.jpeg" alt="photo de Lydie" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Compétences -->
+    <div id="competences" class="competences-section">
+      <div class="section-header">
+        <h2 class="section-title fade-title">Compétences</h2>
+        <p class="section-subtitle">
+          Les technologies que j’utilise pour réaliser vos projets web
+          efficacement.
+        </p>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-icon react"><i class="fab fa-react"></i></div>
+          <div class="skill-name">React</div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon html"><i class="fab fa-html5"></i></div>
+          <div class="skill-name">HTML</div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon css"><i class="fab fa-css3-alt"></i></div>
+          <div class="skill-name">CSS</div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon js"><i class="fab fa-js-square"></i></div>
+          <div class="skill-name">JavaScript</div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon bootstrap">
+            <i class="fab fa-bootstrap"></i>
+          </div>
+          <div class="skill-name">Bootstrap</div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon php"><i class="fab fa-php"></i></div>
+          <div class="skill-name">PHP</div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon figma"><i class="fab fa-figma"></i></div>
+          <div class="skill-name">Figma</div>
+        </div>
+      </div>
+    </div>
+    <!-- projets -->
+    <div id="projets" class="projects-section">
+      <div class="section-header">
+        <h2 class="section-title fade-title">Projets Réalisés</h2>
+        <p class="section-subtitle">
+          Une sélection de mes réalisations en développement front-end.
+        </p>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card">
+          <span class="project-badge top">En production</span>
+          <div class="project-image">
+            <img src="images/bass live.png" alt="Bass Live Production" />
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">BASS LIVE PRODUCTION</h3>
+            <p class="project-subtitle">Plateforme de réservation en ligne</p>
+            <p class="project-description">
+              Plateforme web de réservation de séances photo accessible 24h/24
+              permettant aux clients de reserver en ligne et aux administrateurs
+              de gérer efficacement les prestations proposées
+            </p>
+            <div class="project-tags">
+              <span>React</span>
+              <span>Tailwind CSS</span>
+            </div>
+            <a
+              href="https://reservation-client-three.vercel.app"
+              target="_blank"
+              class="project-link"
+            >
+              Voir le projet <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+        <div class="project-card">
+          <span class="project-badge top live">En ligne</span>
+          <div class="project-image">
+            <img src="images/chelou shop.png" alt="Chelou Shop" />
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Chelou Shop</h3>
+            <p class="project-subtitle">Site e-commerce vitrine</p>
+            <p class="project-description">
+              Site vitrine e-commerce presentant une collection de vetements
+            </p>
+            <div class="project-tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+            <a href="https://chelou.shop" target="_blank" class="project-link">
+              Voir le projet <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="contact" class="contact-wrapper">
+      <div class="contact-title fade-title">
+        <h2 class="fade-title">Travaillons</h2>
+        <h3 class="fade-title">Ensemble</h3>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-card contact-info">
+          <h4>Prenons contact</h4>
+          <p>
+            Vous avez un projet en tête ? Discutons ensemble de la façon dont
+            nous pouvons donner vie à vos idées.
+          </p>
+
+          <div class="info-item">
+            <i class="fa-regular fa-envelope"></i>
+            <span>ayelelydieelisabeth@gmail.com</span>
+          </div>
+
+          <div class="info-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Cameroun, Yaoundé</span>
+          </div>
+
+          <div class="contact-social">
+            <a
+              href="https://www.instagram.com/bae_lydie?igsh=eHp4cXdtbGV0bHhh"
+              target="_blank"
+              aria-label="Instagram"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+        <div class="contact-card contact-form">
+          <form action="https://formspree.io/f/xaqygbez" method="POST">
+            <input
+              type="hidden"
+              name="_subject"
+              value="Nouveau message - Portfolio"
+            />
+            <input type="hidden" name="_captcha" value="false" />
+            <div class="form-group">
+              <label>Nom </label>
+              <input type="text" name="name" required />
+            </div>
+            <div class="form-group">
+              <label>Email </label>
+              <input type="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label>Sujet </label>
+              <input type="text" name="subject" required />
+            </div>
+            <div class="form-group">
+              <label>Message </label>
+              <textarea name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="contact-btn">
+              <i class="fa-regular fa-paper-plane"></i>
+              Envoyer le message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-col">
+          <div class="footer-logo">
+            <i class="fas fa-laptop-code"></i> Lydie-dev
+          </div>
+          <p class="footer-description">
+            Je développe des sites web modernes et des interfaces utilisateur
+            pour vos projets.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-title">Liens rapides</h4>
+          <ul class="footer-links">
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#competences">Compétences</a></li>
+            <li><a href="#projets">Projets</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-title">Contact</h4>
+          <div class="footer-contact">
+            <div class="footer-contact-item">
+              <i class="fa-regular fa-envelope"></i>
+              <span>ayelelydieelisabeth@gmail.com</span>
+            </div>
+            <div class="footer-contact-item">
+              <i class="fa-solid fa-location-dot"></i>
+              <span>Cameroun, Yaoundé</span>
+            </div>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-title">Suivez-moi</h4>
+          <div class="footer-social">
+            <a
+              href="https://www.instagram.com/bae_lydie?igsh=eHp4cXdtbGV0bHhh"
+              target="_blank"
+              aria-label="Instagram"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-divider"></div>
+      <div class="footer-bottom">
+        <p>© 2025 Lydie-dev. Tous droits réservés.</p>
+      </div>
+    </footer>
+    <script src="javascript.js"></script>
+  </body>
+</html>
