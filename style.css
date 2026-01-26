@@ -271,6 +271,7 @@ nav.scrolled {
   white-space: nowrap;
   overflow: hidden;
   width: 0;
+  max-width: fit-content;
   animation: typing 3s steps(5) 0.5s forwards, blink 0.8s step-end infinite;
 }
 .hero-description {
@@ -493,9 +494,6 @@ img {
 .skill-icon.php i {
   color: #777bb4;
 }
-.skill-icon.figma i {
-  color: #f24e1e;
-}
 .skill-name {
   font-size: 1.2rem;
   font-weight: 600;
@@ -538,6 +536,8 @@ img {
   border-radius: 22px;
   overflow: hidden;
   transition: all var(--transition-speed) ease;
+  display: flex;
+  flex-direction: column;
 }
 .project-card:hover {
   transform: translateY(-10px);
@@ -569,6 +569,9 @@ img {
 }
 .project-content {
   padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 .project-title {
   font-size: 1.4rem;
@@ -584,6 +587,7 @@ img {
   font-size: 1rem;
   color: var(--text-muted);
   line-height: 1.6;
+  flex-grow: 1;
 }
 .project-tags {
   display: flex;
@@ -607,6 +611,7 @@ img {
   color: var(--accent-red);
   text-decoration: none;
   transition: gap 0.3s ease;
+  margin-top: auto;
 }
 .project-link:hover {
   gap: 0.8rem;

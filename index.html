@@ -47,7 +47,7 @@
         </div>
         <div class="hero-photo">
           <div class="photo-wrapper">
-            <img src="images/photo.jpeg" alt="photo de Lydie" />
+            <img src="images/PP.jpg" alt="photo de Lydie" />
           </div>
         </div>
       </div>
@@ -87,10 +87,6 @@
         <div class="skill-card">
           <div class="skill-icon php"><i class="fab fa-php"></i></div>
           <div class="skill-name">PHP</div>
-        </div>
-        <div class="skill-card">
-          <div class="skill-icon figma"><i class="fab fa-figma"></i></div>
-          <div class="skill-name">Figma</div>
         </div>
       </div>
     </div>
@@ -177,7 +173,7 @@
 
           <div class="contact-social">
             <a
-              href="https://www.instagram.com/bae_lydie?igsh=eHp4cXdtbGV0bHhh"
+              href="https://www.instagram.com/bae_lydie"
               target="_blank"
               aria-label="Instagram"
             >
@@ -187,15 +183,23 @@
         </div>
         <div class="contact-card contact-form">
           <form action="https://formspree.io/f/xaqygbez" method="POST">
+            <input type="hidden" name="_captcha" value="true" />
+            <input type="text" name="_gotcha" style="display: none" />
             <input
               type="hidden"
-              name="_subject"
-              value="Nouveau message - Portfolio"
+              name="_next"
+              value="https://votre-site.com/merci.html"
             />
-            <input type="hidden" name="_captcha" value="false" />
+
             <div class="form-group">
               <label>Nom </label>
-              <input type="text" name="name" required />
+              <input
+                type="text"
+                name="name"
+                required
+                minlength="2"
+                maxlength="100"
+              />
             </div>
             <div class="form-group">
               <label>Email </label>
@@ -203,11 +207,23 @@
             </div>
             <div class="form-group">
               <label>Sujet </label>
-              <input type="text" name="subject" required />
+              <input
+                type="text"
+                name="subject"
+                required
+                minlength="3"
+                maxlength="200"
+              />
             </div>
             <div class="form-group">
               <label>Message </label>
-              <textarea name="message" rows="5" required></textarea>
+              <textarea
+                name="message"
+                rows="5"
+                required
+                minlength="10"
+                maxlength="5000"
+              ></textarea>
             </div>
             <button type="submit" class="contact-btn">
               <i class="fa-regular fa-paper-plane"></i>
@@ -255,7 +271,7 @@
           <h4 class="footer-title">Suivez-moi</h4>
           <div class="footer-social">
             <a
-              href="https://www.instagram.com/bae_lydie?igsh=eHp4cXdtbGV0bHhh"
+              href="https://www.instagram.com/bae_lydie"
               target="_blank"
               aria-label="Instagram"
             >
